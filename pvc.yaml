@@ -1,0 +1,14 @@
+# https://docs.k3s.io/storage
+# https://rpi4cluster.com/k3s-docker-registry/
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: registry-pvc
+  namespace: docker-registry
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 8Gi
