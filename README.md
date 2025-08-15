@@ -5,7 +5,7 @@ I followed this guide: https://rpi4cluster.com/k3s-docker-registry/ with some mo
 
 ## Storage Class
 I applied the default local-path (see in ```storageClassName``` field in the ```pvc.yaml``` file).
-More info: https://docs.k3s.io/storage
+More info: https://docs.k3s.io/storage.  
 It will show "Pending" state (you don't need to have a PV), but once a Pod or a Deployment would use it, it will be bound (if it is correctly referred in the Pod manifest - see ```deployment.yaml```).
 
 ## Service
