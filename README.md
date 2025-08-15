@@ -26,3 +26,8 @@ mirrors:
     endpoint:
       - "http://registry.cube.local:30500"
 ```
+
+## How to use
+- tag a docker image which is already pulled: ``` docker tag ubuntu:16.04 registry.cube.local:30500/my-ubuntu```
+- push it to registry: ``` docker push registry.cube.local:30500/my-ubuntu```
+- check repo: ```curl registry.cube.local:30500/v2/_catalog```
