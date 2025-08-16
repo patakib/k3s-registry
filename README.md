@@ -22,7 +22,7 @@ Paste this:
 
 ```
 mirrors:
-  docker-registry:
+  docker.io:
     endpoint:
       - "http://registry.cube.local:30500"
 ```
